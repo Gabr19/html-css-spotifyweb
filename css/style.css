@@ -8,8 +8,18 @@
 
 header{
     background-color: aqua;
-    width: 100vw;
+    width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header> *{
+
+    width: 100px;
+    height: 50px;
+    background-color: darkcyan;
 }
 
 main{
@@ -20,7 +30,32 @@ main .barra-laterale{
     background-color: deepskyblue;
     width: 20%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }
+
+.barra-laterale .up{
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    margin-left: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+
+
+}
+
+.barra-laterale .bottom{
+    width: 200px;
+    height: 400px;
+    background-color: darkcyan;
+    margin-left: 10px;
+    border: 1px solid black;
+
+
+}
+
 
 main .parte-centrale{
     background-color: blue;
