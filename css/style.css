@@ -6,42 +6,32 @@
     box-sizing: border-box;
 }
 
-.container{
-    width: 100vw;
-}
-
-
-
-.barra-laterale .container{
-    width: 19%;
-    min-height: 100vh;
+header{
     background-color: aqua;
-    display: inline-block;
-}
-
-.main{
-    width: 80%;
-    min-height: 100vh;
-    background-color: gold;
-    display: inline-block;
-
-}
-
-header .container{
-    width: 100%;
+    width: 100vw;
     height: 100px;
+}
+
+main{
+    display: flex;
+}
+
+main .barra-laterale{
+    background-color: deepskyblue;
+    width: 20%;
+    height: 100vh;
+}
+
+main .parte-centrale{
     background-color: blue;
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-left: 0;
+    width: 80%;
+    height: 100vh;
+
 }
 
-
-
-footer .container{
-    width: 100%;
+footer{
+    background-color: darkblue;
+    width: 100vw;
     height: 100px;
-    background-color: yellow;
+
 }
