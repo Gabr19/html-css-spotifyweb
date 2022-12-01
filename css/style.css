@@ -18,12 +18,12 @@ h2{
 }
 
 
-
+/* SIDE BAR */
 
 .side-bar{
     min-height: calc(100% - 200px);
     min-width: 200px;
-    background-color: aqua;
+    background-color: black;
     display: inline-block;
     position: relative;
     position: fixed;
@@ -34,14 +34,54 @@ h2{
 .side-bar .logo{
     min-height: 50px;
     width: 100px;
-    background-color: cadetblue;
-    border: 1px solid black;
+    /* background-color: cadetblue;
+    border: 1px solid black; */
     margin-left: 15px;
     margin-top: 15px;
+}
+
+.side-bar .logo img{
+    height: 50px;
+}
+
+.side-bar img{
+    height: 30px;
+    margin-right: 5px;
+}
+
+.side-bar .home p{
+    display: inline-block;
+    color: #9a9a9a;
 }
 
 .side-bar .home{
     min-height: 100px;
+    width: 150px;
+    /* background-color: cadetblue;
+    border: 1px solid black; */
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.side-bar .home div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.side-bar .playlist{
+    min-height: 150px;
     width: 100px;
     background-color: cadetblue;
     border: 1px solid black;
@@ -49,14 +89,11 @@ h2{
     margin-top: 15px;
 }
 
-.side-bar .playlist{
-    min-height: 100px;
-    width: 100px;
-    background-color: cadetblue;
-    border: 1px solid black;
-    margin-left: 15px;
-    margin-top: 15px;
-}
+
+
+
+
+
 
 .side-bar .bottom{
     min-height: 50px;
@@ -87,27 +124,31 @@ main{
 .main-header{
     height: 100px;
     width: calc(100vw - 200px);
-    background-color: darkblue;
+    background-color: #080b12;
     position: fixed;
     top: 0;
 }
 
-.main-header .right{
+.main-header button{
     min-height: 50px;
-    width: 100px;
-    background-color: cadetblue;
-    border: 1px solid black;
+    min-width: 100px;
+    background-color: #080b12;
     margin-right: 15px;
     margin-top: 15px;
     position: absolute;
     right: 0;
-
+    color: white;
+    border-radius: 40px;
+    padding: 5px 20px;
+    border: 1px solid white ;
 }
+
+
 
 .main-parte-centrale{
     height: 100%;
     width: calc(100vw - 200px);
-    background-color: darkcyan;
+    background-color: #141922;
     margin-top: 100px;
     overflow-x: auto;
 }
@@ -115,6 +156,7 @@ main{
 .main-parte-centrale .menu ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-parte-centrale .menu li{
