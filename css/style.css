@@ -52,6 +52,8 @@ h2{
 .side-bar .home p{
     display: inline-block;
     color: #9a9a9a;
+    font-weight: bold;
+
 }
 
 .side-bar .home{
@@ -162,6 +164,8 @@ main{
 .main-parte-centrale .menu li{
     list-style: none;
     margin: 20px 20px;
+    color: #7d7f84;
+    font-weight: bold;
 }
 
 .recently ul{
@@ -171,11 +175,17 @@ main{
 }
 
 .recently ul li{
-    width: calc((100% / 6) - 20px);
-    aspect-ratio: 1/1;
+    height: 160px;
+    width: 160px;
     margin: 10px;
     background-color: blueviolet;
 }
+
+.recently ul li img{
+    height: 100%;
+}
+
+
 
 .creato-per ul{
     list-style: none;
@@ -183,11 +193,16 @@ main{
 }
 
 .creato-per ul li{
-    height: 166px;
-    width: 166px;
-    margin: 20px 10px;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
     background-color: blueviolet;
 }
+
+.creato-per ul li img{
+    height: 100%;
+}
+
 
 .artisti-popolari ul{
     list-style: none;
@@ -201,13 +216,17 @@ main{
     background-color: blueviolet;
 }
 
+.artisti-popolari ul li img{
+    height: 100%;
+}
+
 
 /* FOOTER */
 
 .bottom-bar{
     height: 200px;
     width: 100vw;
-    background-color: dodgerblue;
+    background-color: #282828;
     position: absolute;
     bottom: 0;
     left: 0;
