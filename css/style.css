@@ -21,7 +21,7 @@ h2{
 /* SIDE BAR */
 
 .side-bar{
-    min-height: calc(100% - 200px);
+    min-height: calc(100% - 100px);
     min-width: 200px;
     background-color: black;
     display: inline-block;
@@ -72,16 +72,6 @@ h2{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .side-bar .playlist{
     min-height: 150px;
     width: 100px;
@@ -90,12 +80,6 @@ h2{
     margin-left: 15px;
     margin-top: 15px;
 }
-
-
-
-
-
-
 
 .side-bar .bottom{
     min-height: 50px;
@@ -148,7 +132,7 @@ main{
 
 
 .main-parte-centrale{
-    height: 100%;
+    min-height: 100%;
     width: calc(100vw - 200px);
     background-color: #141922;
     margin-top: 100px;
@@ -178,7 +162,7 @@ main{
     height: 160px;
     width: 160px;
     margin: 10px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .recently ul li img{
@@ -196,7 +180,7 @@ main{
     height: 160px;
     width: 160px;
     margin: 10px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .creato-per ul li img{
@@ -213,7 +197,7 @@ main{
     height: 166px;
     width: 166px;
     margin: 20px 10px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .artisti-popolari ul li img{
@@ -224,7 +208,7 @@ main{
 /* FOOTER */
 
 .bottom-bar{
-    height: 200px;
+    height: 100px;
     width: 100vw;
     background-color: #282828;
     position: absolute;
@@ -240,12 +224,46 @@ main{
 }
 
 .bottom-bar .left{
-    height: 100px;
-    width: 200px;
-    background-color: cadetblue;
+    height: 60px;
+    width: 60px;
+    /* background-color: cadetblue; */
+    border: 1px solid black;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar .left .brano-corrente{
+    height: 60px;
+    width: 60px;
+    /* background-color: cadetblue; */
     border: 1px solid black;
 }
 
+.bottom-bar .left img{
+    height: 100%;
+}
+
+.bottom-bar .left .nome-autore{
+    height: 100%;
+    min-width: 100px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.bottom-bar .left .nome-autore p:last-child{
+    color: #7d7f84;
+}
+
+
+
+
+
+
+/* BOTTOM CENTER */
 .bottom-bar .center{
     height: 100px;
     width: 400px;
@@ -276,7 +294,7 @@ main{
     .recently ul li{
         width: calc(25% - 20px);        aspect-ratio: 1/1;
         margin: 10px 10px;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
     }
     
 } 
@@ -287,7 +305,7 @@ main{
         width: calc(50% - 20px);
         aspect-ratio: 1/1;
         margin: 10px 10px;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
     }
     
 } 
