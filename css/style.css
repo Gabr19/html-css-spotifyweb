@@ -110,7 +110,6 @@ main{
     background-color: darkcyan;
     margin-top: 100px;
     overflow-x: auto;
-
 }
 
 .main-parte-centrale .menu ul {
@@ -126,13 +125,13 @@ main{
 .recently ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .recently ul li{
-    height: 166px;
-    width: 200px;
-    margin: 20px 10px;
+    width: calc((100% / 6) - 20px);
+    aspect-ratio: 1/1;
+    margin: 10px;
     background-color: blueviolet;
 }
 
@@ -207,3 +206,27 @@ main{
     background-color: cadetblue;
     border: 1px solid black;
 }
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1100px) {
+
+    .recently ul li{
+        width: calc(25% - 20px);        aspect-ratio: 1/1;
+        margin: 10px 10px;
+        background-color: blueviolet;
+    }
+    
+} 
+
+@media screen and (max-width: 700px) {
+
+    .recently ul li{
+        width: calc(50% - 20px);
+        aspect-ratio: 1/1;
+        margin: 10px 10px;
+        background-color: blueviolet;
+    }
+    
+} 
