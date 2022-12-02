@@ -55,8 +55,13 @@ h2{
     display: inline-block;
     color: #9a9a9a;
     font-weight: bold;
+}
+
+.side-bar .home div:first-child{
+    border-left:  3px solid #598128;
 
 }
+
 
 .side-bar .home{
     min-height: 100px;
@@ -76,7 +81,7 @@ h2{
 
 .side-bar .playlist{
     min-height: 150px;
-    width: 150px;
+    min-width: 150px;
     /* background-color: cadetblue; */
     border: 1px solid black;
     margin-left: 15px;
@@ -115,14 +120,13 @@ h2{
     font-weight: bold;
 }
 
-
+/* SIDE-BAR BOTTOM */
 
 .side-bar .bottom{
     min-height: 50px;
-    width: 160px;
+    min-width: 150px;
     /* background-color: cadetblue; */
     border: 1px solid black;
-    margin-left: 15px;
     margin-top: 15px;
     position: absolute;
     bottom: 0;
@@ -208,6 +212,10 @@ main{
     margin: 20px 20px;
     color: #7d7f84;
     font-weight: bold;
+}
+
+.main-parte-centrale .menu li:first-child{
+    border-bottom: 3px solid #598128;
 }
 
 .recently ul{
