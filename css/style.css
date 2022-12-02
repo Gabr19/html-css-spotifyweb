@@ -23,7 +23,7 @@ h2{
 
 .side-bar{
     min-height: calc(100% - 100px);
-    min-width: 200px;
+    width: 200px;
     background-color: black;
     display: inline-block;
     position: relative;
@@ -59,7 +59,6 @@ h2{
 
 .side-bar .home div:first-child{
     border-left:  3px solid #598128;
-
 }
 
 
@@ -127,6 +126,7 @@ h2{
     min-width: 150px;
     /* background-color: cadetblue; */
     border: 1px solid black;
+    margin-left: 1px;
     margin-top: 15px;
     position: absolute;
     bottom: 0;
@@ -467,4 +467,49 @@ color: white;
         /* background-color: blueviolet; */
     }
     
+} 
+
+
+
+@media screen and (max-width: 600px) {
+
+    .side-bar{
+        min-height: calc(100% - 100px);
+        width: 50px;
+        background-color: black;
+    }
+
+    main{
+
+        width: 100vw;
+        min-height: 100vh;
+        margin-bottom: 200px;
+        margin-left: 50px;
+    }
+
+    .main-header{
+        height: 100px;
+        width: calc(100vw - 50px);
+        background-color: #080b12;
+        position: fixed;
+        top: 0;
+    }
+
+    .main-parte-centrale{
+        min-height: 100%;
+        width: calc(100vw - 50px);
+        background-color: #141922;
+        margin-top: 100px;
+ 
+        
+    }
+
+
+
+    .side-bar .logo , .home , .playlist , .bottom{
+        display: none;
+        
+    }
+
+
 } 
