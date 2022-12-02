@@ -119,6 +119,10 @@ h2{
     font-weight: bold;
 }
 
+
+
+
+
 /* SIDE-BAR BOTTOM */
 
 .side-bar .bottom{
@@ -151,6 +155,21 @@ h2{
     padding: 5px 0;
     padding-left: 5px;
 
+}
+
+/* CONTENUTI NASCOSTI */
+
+.side-bar .small{
+    display: none;
+}
+
+
+.side-bar .home .small{
+    display: none;
+}
+
+.side-bar .playlist .bottom .small{
+    display: none;
 }
 
 
@@ -474,42 +493,51 @@ color: white;
 @media screen and (max-width: 600px) {
 
     .side-bar{
-        min-height: calc(100% - 100px);
         width: 50px;
-        background-color: black;
     }
 
     main{
-
         width: 100vw;
-        min-height: 100vh;
-        margin-bottom: 200px;
         margin-left: 50px;
     }
 
     .main-header{
-        height: 100px;
         width: calc(100vw - 50px);
-        background-color: #080b12;
-        position: fixed;
-        top: 0;
     }
 
     .main-parte-centrale{
-        min-height: 100%;
         width: calc(100vw - 50px);
-        background-color: #141922;
-        margin-top: 100px;
- 
-        
     }
 
-
-
-    .side-bar .logo , .home , .playlist , .bottom{
+    .side-bar .logo{
         display: none;
-        
     }
+
+    .side-bar .home .hidden-for-xs{
+        display: none;
+    }
+
+    .side-bar .playlist{
+        display: none;
+    }
+
+    .side-bar .home{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    .side-bar .small{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
 
 
 } 
